@@ -1,35 +1,29 @@
-import './App.css';
-import React, { useRef, useState } from 'react'
-function App() {
-  return (
-    <div className="App">
-      <h1>HOC </h1>
-      <HOCRed cmp={Counter} />
-      <HOCGreen cmp={Counter} />
-      <HOCBlue cmp={Counter} />
+import React, { Component, createContext } from 'react';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+ 
+import Page1 from './Page1';
+import About from './About';
+import Page2 from './Page2';
+import Navigation from './Navigation';
 
-    </div>
-  );
-}
-function HOCRed(props)
-{
-  return <h2 style={{backgroundColor:'red',width:100}}>Red<props.cmp /></h2>
-}
-function HOCGreen(props)
-{
-  return <h2 style={{backgroundColor:'green',width:100}}>Grren<props.cmp /></h2>
-}
-function HOCBlue(props)
-{
-  return <h2 style={{backgroundColor:'blue',width:100}}>blue <props.cmp /></h2>
-}
-function Counter()
-{
-  const [count,setCount]=useState(0)
-  return <div>
-    <h3>{count}</h3>
-    <button onClick={()=>setCount(count+1)}>Update</button>
-  </div>
-}
+const counter = createContext();
 
+class App extends Component {
+  render() {
+    return (      
+        <div>
+          <About />
+       <BrowserRouter>
+          <Navigation />
+           <Routes>
+             <Route exact path="/" element={<Page1/>} />
+             <Route exact path="/Page2" element={<Page2/>}/>
+            </Routes>
+      </BrowserRouter>
+        </div> 
+    );
+  }
+}
+ 
 export default App;
+export {counter};
