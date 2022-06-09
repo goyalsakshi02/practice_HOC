@@ -1,6 +1,7 @@
 import React from 'react';
- 
+ import {counter} from "./App"
 const Page1 = () => {
+
     return (
        <div>
            <h1> Page 1</h1>

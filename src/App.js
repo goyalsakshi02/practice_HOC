@@ -12,7 +12,9 @@ class App extends Component {
   render() {
     return (      
         <div>
+          {/* <counter.Provider value = {0}> */}
           <About />
+             {/* </counter.Provider> */}
        <BrowserRouter>
           <Navigation />
            <Routes>
