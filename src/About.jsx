@@ -7,10 +7,11 @@ const About = () => {
 
     return (
        <div>
-          <button onClick={()=> dispatch({type:'INCREMENT'})}>+</button>
+           <button>{counter}</button>
+          {/* <button onClick={()=> dispatch({type:'INCREMENT'})}>+</button>
           <hi>{counter}</hi>
           <button onClick={()=> dispatch({type:'DECREMENT'})}>-</button>
-          {/* <Outlet /> */}
+          <Outlet /> */}
        </div>
     );
 }

@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+   
+
+.navigation {
+  height: 55px;
+  background: linear-gradient(45deg, #4199fe, #74b4fe);
+}
+
+a, .link{
+  display: flex ;
+  padding:  20px;
+  line-height: 10px;
+  color: #fff;
+  background: black ;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count{
+  height:fit-content;
+  padding: 15px;
+  width: 84px;
+}
+
+.page{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.button{
+  padding: 50px;
+  background-color: #d0e3e2;
+  text-decoration-color: white;
+  margin: 20px;
+}
+
+.router{
+  background-image:url(https://previews.123rf.com/images/mehdialigol/mehdialigol1409/mehdialigol140900014/32145393-low-opacity-texture-background.jpg) ;
+
+  height: 100vh;
+  
+}
+
+/* .page1{
+   display:flex;
+   justify-content: center;
+   font-size: 50px;
+} */
