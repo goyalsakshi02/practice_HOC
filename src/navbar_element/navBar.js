@@ -21,7 +21,7 @@ let NavBar = () => {
             <nav className="navbar1">
                 <div className="container">
                     <div className='dianapp'>
-                     <Link to={'/'} className="dian">DIANAPPS</Link>
+                     <Link to={'/'} className="dian"><img src="https://dianapps.com/assets/img/images/dianapps_logo.svg" /></Link>
                      </div>
                     <div className="collapse">
                         <ul className="navbar-nav">
