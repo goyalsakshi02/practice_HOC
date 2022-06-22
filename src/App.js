@@ -1,31 +1,26 @@
-import React, { Component, createContext } from 'react';
-import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
- 
+import React from 'react';
+import './App.css';
+import {Route , Routes} from "react-router-dom";
+import NavBar from "./navbar_element/navBar";
+import CounterRedux from "./CounterRedux";
 import Page1 from './Page1';
-import About from './About';
 import Page2 from './Page2';
-import Navigation from './Navigation';
+import Dianapp from './Dianapp';
+import Counter1 from './Counter1';
 
-const counter = createContext();
-
-class App extends Component {
-  render() {
-    return (      
-        <div>
-          {/* <counter.Provider value = {0}> */}
-          <About />
-             {/* </counter.Provider> */}
-       <BrowserRouter>
-          <Navigation />
-           <Routes>
-             <Route exact path="/" element={<Page1/>} />
-             <Route exact path="/Page2" element={<Page2/>}/>
-            </Routes>
-      </BrowserRouter>
-        </div> 
-    );
-  }
+function App() {
+  return (
+    <React.Fragment>
+      <NavBar/>
+        <Routes>
+        <Route path={'/'} element={<Dianapp />}/>
+         <Route path={'/counter'} element={<CounterRedux />}/>
+         <Route path={'/page1'}   element={<Page1 />} />
+         <Route path={'/page2'}   element={<Page2 />} />
+         <Route path={"/count"}  element={<Counter1 />} />
+        </Routes>
+    </React.Fragment>
+  );
 }
- 
+
 export default App;
-export {counter};

@@ -1,5 +1,4 @@
 import React from 'react';
- import {counter} from "./App"
 const Page1 = () => {
 
     return (

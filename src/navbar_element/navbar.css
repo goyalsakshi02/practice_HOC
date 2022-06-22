@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+}
+.nav-link, .dian, .count{
+    color:white;
+   
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-item{
+    padding: 0 37px;
+}
+
+ul{
+    display:flex;
+}
+
+.dian{
+    padding: 24px;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.count{
+    padding: 0 36px
+}
+
+.nav-link{
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.dians{
+    font-weight: 600;
+    color: white;
+    background-color:rgb(73, 14, 62);
+    border: 2px;
+    border-color: white;
+    padding: 9px;
+    /* height: 40px; */
+    /* width: 50px; */
+    border-radius: 82px
+}
+
+    
+
+.dianapp{
+    padding: 0 24px;
+    position: relative;
+    z-index: 0;
+    margin-right: 60px;
+}
+   
+
+
+.ccc{
+    position: absolute;
+    z-index: -2;
+    top: -35px;
+    padding: 21px; 
+    right: -20px;
+    /* height: 60px;
+    width: 60px; */
+}
+
+button{
+    padding:3px;
+    position:absolute;
+    left: -29px;
+    top: -7px;
+    border-radius: 6px;
+    color:white;
+    background-color: teal;
+}
+
+@media screen {
+    
+}

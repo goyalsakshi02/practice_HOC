@@ -1,5 +1,4 @@
-import React,{useContext} from 'react';
-import {counter} from "./App"
+import React from 'react';
  
 const Page2 = () => {
     return (
